@@ -42,5 +42,5 @@ def action(num: int, fav_dish: str) -> None:
   st.balloons()
 
 
-if __name == "__main__":
+if __name__ == "__main__":
   read_mind()
