@@ -42,20 +42,6 @@ def action(num: int, fav_dish: str) -> None:
     st.info(f"You were thinking about the number {num} and your favorite dish is {fav_dish}... :sunglasses:")
 
   st.balloons()
-  with open("query_count.txt", "r+") as file:
-    count = file.read()
-    if not count:
-      count = 0
-      st.write(f"first time: {count}")
-    else:
-      st.write(f"next time: {count}")
-      count = int(count)
-    count = count + 1
-  
-  st.write(f"going to write: {count}")
-  with open("query_count.txt", "w") as file:
-    file.write(str(count))
-
 
 if __name__ == "__main__":
   read_mind()
