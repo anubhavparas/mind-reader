@@ -50,7 +50,9 @@ def action(num: int, fav_dish: str) -> None:
     else:
       st.write(f"next time: {count}")
       count = int(count)
-    file.write(count + 1)
+    count = count + 1
+    st.write(f"going to write: {count}")
+    file.write(str(count))
 
 
 if __name__ == "__main__":
