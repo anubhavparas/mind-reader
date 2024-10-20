@@ -1,1 +1,1 @@
-## The Mind Reader App 🔮
+# The Mind Reader App 🔮
