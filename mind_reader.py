@@ -45,7 +45,7 @@ def action(num: int, fav_dish: str) -> None:
     st.info("Okay! I am ready now...")
     time.sleep(sleep_time)
 
-    st.info(f"You were thinking about the number: {num} and your favorite dish is: {fav_dish}... :sunglasses:")
+    st.info(f"You were thinking about the number {num} and your favorite dish is {fav_dish}... :sunglasses:")
 
   st.balloons()
 
