@@ -14,7 +14,6 @@ def read_mind() -> None:
   num = None
   fav_dish = None
   with st.form("mind_reader_form"):
-    st.write("Think of a number between 1-100 and I will read your thoughts...")
     num = st.number_input("Think of a number between 1-100...", max_value=100, step=1)
     if 1 <= num <= 100:
       fav_dish = st.text_input("What's your favorite dish? :yum:")
@@ -28,18 +27,19 @@ def action(num: int, fav_dish: str) -> None:
   Processes the inputs.
   """
   sleep_time = 1.5
-  # msg = st.toast("Making connections with your mind...")
-  st.info("Making connections with your mind...")
-  time.sleep(sleep_time)
-  # msg.toast("Analysing your thoughts...")
-  st.info("Analysing your thoughts...")
-  time.sleep(sleep_time)
-  # msg.toast("Almost there...")
-  st.info("Almost there...")
-  time.sleep(sleep_time)
-  # msg.toast("Okay! I am ready now...")
-  st.info("Okay! I am ready now...")
-  time.sleep(sleep_time)
+  with st.empty():
+    # msg = st.toast("Making connections with your mind...")
+    st.info("Making connections with your mind...")
+    time.sleep(sleep_time)
+    # msg.toast("Analysing your thoughts...")
+    st.info("Analysing your thoughts...")
+    time.sleep(sleep_time)
+    # msg.toast("Almost there...")
+    st.info("Almost there...")
+    time.sleep(sleep_time)
+    # msg.toast("Okay! I am ready now...")
+    st.info("Okay! I am ready now...")
+    time.sleep(sleep_time)
 
   st.info(f"You were thinking about the number: {num} and your favorite dish is: {fav_dish}... :sunglasses:")
 
