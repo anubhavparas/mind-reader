@@ -7,7 +7,7 @@ def read_mind() -> None:
   This function reads mind.. :)
   """
 
-  st.title("🔮 Mind Reader")
+  st.title("Mind Reader :crystal_ball:")
   st.header("Let's read your mind... :bulb:")
   
   with st.form("mind_reader_form"):
