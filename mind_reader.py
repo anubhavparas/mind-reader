@@ -17,9 +17,9 @@ def read_mind() -> None:
       fav_dish = st.text_input("What's your favorite dish? :yum:")
 
     submitted = st.form_submit_button("Go")
-    if submitted and num and fav_dish:
-      action(num, fav_dish)
-    
+  if submitted and num and fav_dish:
+    action(num, fav_dish)
+  
 
 def action(num: int, fav_dish: str) -> None:
   """
