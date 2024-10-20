@@ -46,8 +46,9 @@ def action(num: int, fav_dish: str) -> None:
     count = file.read()
     if not count:
       count = 0
+      st.write(f"first time: {count}")
     else:
-      st.write(count)
+      st.write(f"next time: {count}")
       count = int(count)
     file.write(str(count + 1))
 
