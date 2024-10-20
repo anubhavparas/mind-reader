@@ -47,6 +47,7 @@ def action(num: int, fav_dish: str) -> None:
     if not count:
       count = 0
     else:
+      st.write(count)
       count = int(count)
     file.write(str(count + 1))
 
