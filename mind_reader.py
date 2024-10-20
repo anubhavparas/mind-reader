@@ -51,7 +51,9 @@ def action(num: int, fav_dish: str) -> None:
       st.write(f"next time: {count}")
       count = int(count)
     count = count + 1
-    st.write(f"going to write: {count}")
+  
+  st.write(f"going to write: {count}")
+  with open("query_count.txt", "w") as file:
     file.write(str(count))
 
 
